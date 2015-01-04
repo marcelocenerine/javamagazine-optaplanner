@@ -1,0 +1,66 @@
+package br.com.devmedia.optaplaner.agenciaturismo.planning;
+
+import org.optaplanner.core.api.score.buildin.hardmediumsoft.HardMediumSoftScoreHolder;
+
+import java.util.Set;
+
+import br.com.devmedia.agenciaturismo.dominio.Excursao;
+import br.com.devmedia.agenciaturismo.dominio.Grupo;
+import br.com.devmedia.agenciaturismo.dominio.Grupo.TipoGrupo;
+import br.com.devmedia.agenciaturismo.dominio.Veiculo;
+
+global HardMediumSoftScoreHolder scoreHolder;
+
+
+// --- Hard ---
+
+rule "Cada veiculo deve transportar passageiros apenas de uma unica excursao"
+    when
+        $veiculo : Veiculo()        
+        $excursoesPorVeiculo : Set(size > 1)
+                               from accumulate(Grupo(veiculo == $veiculo, $excursao : excursao),
+                               collectSet($excursao))
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, - $excursoesPorVeiculo.size());
+end
+
+
+rule "Todos os integrantes de um mesmo grupo devem viajar juntos"
+    when
+        $veiculo : Veiculo($capacidade : capacidade)
+        $qtdPassageiros : Number(intValue > $capacidade)
+                          from accumulate(Grupo(veiculo == $veiculo, $qtd : quantidadePassageiros),
+                          sum($qtd))                
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, $capacidade - $qtdPassageiros.intValue());
+end
+
+
+// --- Medium ---
+
+rule "Custo com consumo de combustivel deve ser reduzido"
+    when
+    	$veiculo : Veiculo($kmPorLitro : kmPorLitro)
+    	$excursoes : Set()
+                     from accumulate(Grupo(veiculo == $veiculo, $excursao : excursao),
+                     collectSet($excursao))
+    	$qtdCombustivel : Number()
+                          from accumulate(Excursao($distancia : destino.distancia) from $excursoes,
+                          sum($distancia / $kmPorLitro)) 
+    then
+        scoreHolder.addMediumConstraintMatch(kcontext, - $qtdCombustivel.intValue());
+end
+
+
+// --- Soft ---
+
+rule "Grupos de estudantes devem ser alocados em veiculos exclusivos quando possivel"
+    when
+        $veiculo : Veiculo()
+        $tiposGrupo : Set(size > 1)
+                      from accumulate(Grupo(veiculo == $veiculo, $tipo : tipo),
+                      collectSet($tipo))
+        exists TipoGrupo(this == TipoGrupo.ESTUDANTES) from $tiposGrupo       				  	   
+    then
+        scoreHolder.addSoftConstraintMatch(kcontext, -1);
+end
