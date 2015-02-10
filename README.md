@@ -1,7 +1,7 @@
 javamagazine-optaplanner
 ========================
 
-Aplicação de exemplo desenvolvida no artigo sobre o OptaPlanner publicado na revista Java Magazine edição nº 135 e 136.
+Aplicação de exemplo desenvolvida no artigo sobre o OptaPlanner publicado na revista Java Magazine edições nº 135 e 136.
 
 
 #Observações:
