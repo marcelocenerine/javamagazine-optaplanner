@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+    <!-- Modelo de domínio -->
+    <solutionClass>br.com.devmedia.agenciaturismo.planejamento.AlocacaoPassageiros</solutionClass>
+    <entityClass>br.com.devmedia.agenciaturismo.dominio.Grupo</entityClass>
+
+    <!-- Score -->
+    <scoreDirectorFactory>
+        <scoreDefinitionType>HARD_MEDIUM_SOFT</scoreDefinitionType>
+        <scoreDrl>solver/alocacaoPassageirosScoreRules.drl</scoreDrl>
+        <!-- <easyScoreCalculatorClass>br.com.devmedia.agenciaturismo.planejamento.score.AlocacaoPassageirosScoreCalculator</easyScoreCalculatorClass> -->
+        <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
+    </scoreDirectorFactory>
+
+    <!-- Algoritmos de otimização -->
+    <termination>
+        <secondsSpentLimit>20</secondsSpentLimit>
+    </termination>
+
+    <constructionHeuristic>
+        <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+    </constructionHeuristic>
+
+    <localSearch>
+        <acceptor>
+            <entityTabuSize>7</entityTabuSize>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>1000</acceptedCountLimit>
+        </forager>
+        <unionMoveSelector>
+            <changeMoveSelector />
+            <swapMoveSelector />
+            <pillarChangeMoveSelector />
+            <pillarSwapMoveSelector />
+        </unionMoveSelector>
+    </localSearch>
+</solver>

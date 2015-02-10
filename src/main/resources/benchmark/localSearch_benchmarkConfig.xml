@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plannerBenchmark>
+    <!-- Configurações gerais do benchmarking -->
+    <benchmarkDirectory>local/benchmark/report</benchmarkDirectory>
+    <parallelBenchmarkCount>AUTO</parallelBenchmarkCount>
+    <warmUpSecondsSpentLimit>20</warmUpSecondsSpentLimit>
+
+    <!-- Configurações comuns para todos benchmarks -->
+    <inheritedSolverBenchmark>
+        <problemBenchmarks>
+            <xStreamAnnotatedClass>br.com.devmedia.agenciaturismo.planejamento.AlocacaoPassageiros</xStreamAnnotatedClass>
+            <inputSolutionFile>src/main/resources/data/0050grupos_0010veiculos.xml</inputSolutionFile>
+            <inputSolutionFile>src/main/resources/data/0500grupos_0100veiculos.xml</inputSolutionFile>
+
+            <problemStatisticType>BEST_SCORE</problemStatisticType>
+            <problemStatisticType>STEP_SCORE</problemStatisticType>
+        </problemBenchmarks>
+
+        <solver>
+            <solutionClass>br.com.devmedia.agenciaturismo.planejamento.AlocacaoPassageiros</solutionClass>
+            <entityClass>br.com.devmedia.agenciaturismo.dominio.Grupo</entityClass>
+
+            <scoreDirectorFactory>
+                <scoreDefinitionType>HARD_MEDIUM_SOFT</scoreDefinitionType>
+                <scoreDrl>solver/alocacaoPassageirosScoreRules.drl</scoreDrl>
+                <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
+            </scoreDirectorFactory>
+
+            <termination>
+                <secondsSpentLimit>20</secondsSpentLimit>
+            </termination>
+        </solver>
+    </inheritedSolverBenchmark>
+
+    <!-- Benchmarks -->
+
+    <solverBenchmark>
+        <name>First Fit Decreasing</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+        </solver>
+    </solverBenchmark>
+
+    <solverBenchmark>
+        <name>Hill Climbing</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <acceptor>
+                    <acceptorType>HILL_CLIMBING</acceptorType>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>1000</acceptedCountLimit>
+                </forager>
+<!--                 <unionMoveSelector> -->
+<!--                     <changeMoveSelector /> -->
+<!--                     <swapMoveSelector /> -->
+<!--                     <pillarChangeMoveSelector /> -->
+<!--                     <pillarSwapMoveSelector /> -->
+<!--                 </unionMoveSelector> -->
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+
+    <solverBenchmark>
+        <name>Tabu Search</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <acceptor>
+                    <entityTabuSize>7</entityTabuSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>1000</acceptedCountLimit>
+                </forager>
+                <unionMoveSelector>
+                    <changeMoveSelector />
+                    <swapMoveSelector />
+                    <pillarChangeMoveSelector />
+                    <pillarSwapMoveSelector />
+                </unionMoveSelector>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+
+    <solverBenchmark>
+        <name>Late Acceptance</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <acceptor>
+                    <lateAcceptanceSize>400</lateAcceptanceSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>4</acceptedCountLimit>
+                </forager>
+<!--                 <unionMoveSelector> -->
+<!--                     <changeMoveSelector /> -->
+<!--                     <swapMoveSelector /> -->
+<!--                     <pillarChangeMoveSelector /> -->
+<!--                     <pillarSwapMoveSelector /> -->
+<!--                 </unionMoveSelector> -->
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+</plannerBenchmark>

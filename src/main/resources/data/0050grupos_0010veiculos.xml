@@ -1,0 +1,652 @@
+<alocacaoPassageiros>
+  <veiculo>
+    <placa>V0001</placa>
+    <capacidade>55</capacidade>
+    <kmPorLitro>2</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0002</placa>
+    <capacidade>60</capacidade>
+    <kmPorLitro>1</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0003</placa>
+    <capacidade>50</capacidade>
+    <kmPorLitro>2</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0004</placa>
+    <capacidade>40</capacidade>
+    <kmPorLitro>3</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0005</placa>
+    <capacidade>55</capacidade>
+    <kmPorLitro>2</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0006</placa>
+    <capacidade>40</capacidade>
+    <kmPorLitro>3</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0007</placa>
+    <capacidade>50</capacidade>
+    <kmPorLitro>3</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0008</placa>
+    <capacidade>50</capacidade>
+    <kmPorLitro>3</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0009</placa>
+    <capacidade>40</capacidade>
+    <kmPorLitro>3</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0010</placa>
+    <capacidade>30</capacidade>
+    <kmPorLitro>6</kmPorLitro>
+  </veiculo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>8</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>2</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>7</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>7</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>7</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>7</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>10</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>8</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>20</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>20</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>3</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Florianópolis</descricao>
+        <distancia>1860</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>5</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>3</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Florianópolis</descricao>
+        <distancia>1860</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>8</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>3</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Florianópolis</descricao>
+        <distancia>1860</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>8</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>3</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Florianópolis</descricao>
+        <distancia>1860</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>10</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>3</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Florianópolis</descricao>
+        <distancia>1860</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>8</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>4</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>5</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>4</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>10</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>4</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>7</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>4</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>6</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>4</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>10</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>5</codigo>
+      <data>2014-12-20 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>3</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>5</codigo>
+      <data>2014-12-20 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>9</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>5</codigo>
+      <data>2014-12-20 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>20</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>5</codigo>
+      <data>2014-12-20 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>10</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>5</codigo>
+      <data>2014-12-20 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>5</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>7</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>5</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>8</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>10</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>8</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>7</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>5</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>4</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>6</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>4</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>3</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Florianópolis</descricao>
+        <distancia>1860</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>9</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>3</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Florianópolis</descricao>
+        <distancia>1860</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>7</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>3</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Florianópolis</descricao>
+        <distancia>1860</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>5</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>3</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Florianópolis</descricao>
+        <distancia>1860</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>10</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>3</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Florianópolis</descricao>
+        <distancia>1860</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>10</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>4</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>2</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>4</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>4</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>4</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>10</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>4</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>20</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>4</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>6</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>5</codigo>
+      <data>2014-12-20 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>8</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>5</codigo>
+      <data>2014-12-20 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>6</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>5</codigo>
+      <data>2014-12-20 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>10</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>5</codigo>
+      <data>2014-12-20 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>3</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>5</codigo>
+      <data>2014-12-20 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Belo Horizonte</descricao>
+        <distancia>1708</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>5</qtdPassageiros>
+  </grupo>
+</alocacaoPassageiros>

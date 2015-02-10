@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plannerBenchmark>
+    <benchmarkDirectory>local/benchmark/report</benchmarkDirectory>
+    <parallelBenchmarkCount>AUTO</parallelBenchmarkCount>
+    <warmUpSecondsSpentLimit>20</warmUpSecondsSpentLimit>
+
+    <inheritedSolverBenchmark>
+        <!-- Data sets -->
+        <problemBenchmarks>
+            <xStreamAnnotatedClass>br.com.devmedia.agenciaturismo.planejamento.AlocacaoPassageiros</xStreamAnnotatedClass>
+            <inputSolutionFile>src/main/resources/data/0004grupos_0002veiculos.xml</inputSolutionFile>
+            <inputSolutionFile>src/main/resources/data/0006grupos_0003veiculos.xml</inputSolutionFile>
+            <inputSolutionFile>src/main/resources/data/0008grupos_0004veiculos.xml</inputSolutionFile>
+            <inputSolutionFile>src/main/resources/data/0010grupos_0005veiculos.xml</inputSolutionFile>
+            <inputSolutionFile>src/main/resources/data/0012grupos_0006veiculos.xml</inputSolutionFile>
+            <inputSolutionFile>src/main/resources/data/0014grupos_0007veiculos.xml</inputSolutionFile>
+            <inputSolutionFile>src/main/resources/data/0016grupos_0008veiculos.xml</inputSolutionFile>
+        </problemBenchmarks>
+
+        <solver>
+            <solutionClass>br.com.devmedia.agenciaturismo.planejamento.AlocacaoPassageiros</solutionClass>
+            <entityClass>br.com.devmedia.agenciaturismo.dominio.Grupo</entityClass>
+
+            <scoreDirectorFactory>
+                <scoreDefinitionType>HARD_MEDIUM_SOFT</scoreDefinitionType>
+                <scoreDrl>solver/alocacaoPassageirosScoreRules.drl</scoreDrl>
+                <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
+            </scoreDirectorFactory>
+
+            <termination>
+                <minutesSpentLimit>60</minutesSpentLimit>
+            </termination>
+        </solver>
+    </inheritedSolverBenchmark>
+
+    <solverBenchmark>
+        <name>Brute force</name>
+        <solver>
+            <exhaustiveSearch>
+                <exhaustiveSearchType>BRUTE_FORCE</exhaustiveSearchType>
+            </exhaustiveSearch>
+        </solver>
+    </solverBenchmark>
+
+    <solverBenchmark>
+        <name>Branch and Bound</name>
+        <solver>
+            <exhaustiveSearch>
+                <exhaustiveSearchType>BRANCH_AND_BOUND</exhaustiveSearchType>
+            </exhaustiveSearch>
+        </solver>
+    </solverBenchmark>
+</plannerBenchmark>

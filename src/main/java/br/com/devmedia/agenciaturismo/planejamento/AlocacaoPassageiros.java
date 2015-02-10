@@ -13,11 +13,19 @@ import org.optaplanner.core.api.score.buildin.hardmediumsoft.HardMediumSoftScore
 import br.com.devmedia.agenciaturismo.dominio.Grupo;
 import br.com.devmedia.agenciaturismo.dominio.Veiculo;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamImplicit;
+
 @PlanningSolution
+@XStreamAlias("alocacaoPassageiros")
 public class AlocacaoPassageiros implements Solution<HardMediumSoftScore> {
-    
+
+    @XStreamImplicit(itemFieldName = "grupo")
     private List<Grupo> grupos;
+
+    @XStreamImplicit(itemFieldName = "veiculo")
     private List<Veiculo> veiculos;
+
     private HardMediumSoftScore score;
 
     AlocacaoPassageiros() {
@@ -27,7 +35,7 @@ public class AlocacaoPassageiros implements Solution<HardMediumSoftScore> {
         this.grupos = grupos;
         this.veiculos = veiculos;
     }
-    
+
     @Override
     public HardMediumSoftScore getScore() {
         return score;
@@ -42,7 +50,7 @@ public class AlocacaoPassageiros implements Solution<HardMediumSoftScore> {
     public List<Veiculo> getVeiculos() {
         return veiculos;
     }
-    
+
     @PlanningEntityCollectionProperty
     public List<Grupo> getGrupos() {
         return grupos;

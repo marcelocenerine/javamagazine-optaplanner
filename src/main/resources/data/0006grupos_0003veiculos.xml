@@ -1,0 +1,89 @@
+<alocacaoPassageiros>
+  <veiculo>
+    <placa>V0001</placa>
+    <capacidade>25</capacidade>
+    <kmPorLitro>8</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0002</placa>
+    <capacidade>20</capacidade>
+    <kmPorLitro>8</kmPorLitro>
+  </veiculo>
+  <veiculo>
+    <placa>V0003</placa>
+    <capacidade>20</capacidade>
+    <kmPorLitro>7</kmPorLitro>
+  </veiculo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>6</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>2</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>5</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>OUTROS</tipo>
+    <qtdPassageiros>2</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>1</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>São Paulo</descricao>
+        <distancia>1074</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>5</qtdPassageiros>
+  </grupo>
+  <grupo>
+    <excursao>
+      <codigo>2</codigo>
+      <data>2014-12-19 00:00:00.0 UTC</data>
+      <destino>
+        <descricao>Curitiba</descricao>
+        <distancia>1260</distancia>
+      </destino>
+    </excursao>
+    <tipo>ESTUDANTES</tipo>
+    <qtdPassageiros>5</qtdPassageiros>
+  </grupo>
+</alocacaoPassageiros>

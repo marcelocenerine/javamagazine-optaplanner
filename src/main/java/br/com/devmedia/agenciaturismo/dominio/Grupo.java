@@ -3,7 +3,9 @@ package br.com.devmedia.agenciaturismo.dominio;
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
 
-@PlanningEntity
+import br.com.devmedia.agenciaturismo.planejamento.score.GrupoDifficultyComparator;
+
+@PlanningEntity(difficultyComparatorClass = GrupoDifficultyComparator.class)
 public class Grupo {
 
     public enum TipoGrupo {
