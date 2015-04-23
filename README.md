@@ -1,12 +1,12 @@
 javamagazine-optaplanner
 ========================
 
-AplicaÁ„o de exemplo desenvolvida no artigo sobre o OptaPlanner publicado na revista Java Magazine ediÁıes n∫ 135 e 136.
+Aplica√ß√£o de exemplo desenvolvida no artigo sobre o OptaPlanner publicado na revista Java Magazine edi√ß√µes n¬∫ [135](http://www.devmedia.com.br/red-hat-resolvendo-problemas-de-planejamento-com-optaplanner-parte-1/31981) e [136](http://www.devmedia.com.br/como-escolher-o-algoritmo-mais-eficiente-com-optaplanner-parte-2/32085).
 
 
-#ObservaÁıes:
+#Observa√ß√µes:
 
-Para manter os exemplos de cÛdigo usando os algoritmos Brute Force e Tabu Search funcionando...
+Para manter os exemplos de c√≥digo usando os algoritmos Brute Force e Tabu Search funcionando...
 
-- A classe **Main** descrita no artigo È encontrada em duas versıes: **BruteForceMain** (primeira vers„o) e **TabuSearchMain** (segunda vers„o)
-- O arquivo **'solverConfig.xml'** descrito no artigo È encontrado em duas versıes: **'bruteForce_solverConfig.xml'** (primeira vers„o) e **'tabuSearch_solverConfig.xml'** (segunda vers„o)
+- A classe **Main** descrita no artigo √© encontrada em duas vers√µes: **BruteForceMain** (primeira vers√£o) e **TabuSearchMain** (segunda vers√£o)
+- O arquivo **'solverConfig.xml'** descrito no artigo √© encontrado em duas vers√µes: **'bruteForce_solverConfig.xml'** (primeira vers√£o) e **'tabuSearch_solverConfig.xml'** (segunda vers√£o)
